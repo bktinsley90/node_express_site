@@ -1,0 +1,48 @@
+{
+ "projects": [{
+    "id": 1,
+    "project_name": "Random Quote Generator",
+    "description":"Displays random quotes as well as diferent colors on click and on an interval",
+    "technologies":["Javascript", "HTML/CSS"],
+    "live_link":"https://bktinsley90.github.io/randomQuoteGenerator/",
+    "github_link":"https://github.com/bktinsley90/randomQuoteGenerator",
+    "image_urls": ["/static/images/randomquotes.png", "/static/images/randomquotes2.png","/static/images/randomquotes3.png"]
+ },
+ {
+    "id": 2,
+    "project_name": "List Pagination and Filtering",
+    "description":"Displays a list of users seperated into pages. Can also Search through by name",
+    "technologies":["Javascript", "HTML/CSS"],
+    "live_link":"https://bktinsley90.github.io/Project2_Pagination/",
+    "github_link":"https://github.com/bktinsley90/Project2_Pagination",
+    "image_urls": ["/static/images/pagination2.png","/static/images/pagination1.png","/static/images/pagination3.png"]
+ },
+{
+    "id": 3,
+    "project_name": "Interactive Form",
+    "description":"A one page form for a fictional conference. Includes form validation",
+    "technologies":["Javascript", "HTML/CSS"],
+    "live_link":"https://bktinsley90.github.io/Interactive_Form/",
+    "github_link":"https://github.com/bktinsley90/Interactive_Form",
+    "image_urls":["/static/images/interactiveform1.png", "/static/images/interactiveform2.png","/static/images/interactiveform3.png"] 
+},
+{
+    "id": 4,
+    "project_name": "OOP Game Show App",
+    "description":" A browser based word guessing game",
+    "technologies":["Javascript","HTML/CSS","Object Oriented programming"],
+    "live_link":"https://bktinsley90.github.io/game_show_app/",
+    "github_link":"https://github.com/bktinsley90/game_show_app",
+    "image_urls":["/static/images/gameshow1.png", "/static/images/gameshow2.png","/static/images/gameshow3.png"] 
+},
+{
+    "id": 5,
+    "project_name": "Public Api",
+    "description":"a fictional employee directory using a public api Random User",
+    "technologies":["Javascript", "HTML/CSS", "API"],
+    "live_link":"https://bktinsley90.github.io/public_Api/",
+    "github_link":"https://github.com/bktinsley90/public_Api",
+    "image_urls": ["/static/images/publicapi.png","/static/images/publicapi2.png","/static/images/publicapi3.png"]
+}]   
+}
+

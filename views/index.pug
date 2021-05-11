@@ -1,0 +1,19 @@
+extends layout.pug
+
+block content
+
+  article.portfolio-intro
+
+    
+    h1 Welcome Potential Employers!
+    p This is a collection of my amazing journey learning how to code!
+
+
+  article.portfolio-project-thumbs
+    .projects-box.box.grid
+      each project in projects
+        .cell
+          a(href=`/projects/${project.id}`)
+            img.thumbnail(src=`${project.image_urls[0]}`, alt='blank image')
+            h5= `${project.project_name}`
+
