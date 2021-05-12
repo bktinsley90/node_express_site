@@ -18,14 +18,15 @@ app.use(indexRouter);
 
 //error handling
 app.use((req, res, next) => {
-    const err = new Error('Pump your brakes! Page Not Found!');
-    err.status = 404;
-    next(err)
+    const error = new Error('Pump your brakes! Page Not Found!');
+    error.status = 404;
+    console.error(`An error occured on route ${req.originalUrl} with message: ${error.message} and status: ${error.status}`);
+    next(error)
 })
-app.use((err, req, res, next) => {
-    res.locals.error = err
-    res.status(err.status)
-    res.render('error', err)
+app.use((error, req, res, next) => {
+    res.locals.error = error
+    res.status(error.status ||' Not Found')
+    res.render('error')
 })
 
 //setting the port to 3000 

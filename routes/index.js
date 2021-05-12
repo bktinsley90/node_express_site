@@ -23,7 +23,9 @@ router.get('/projects/:id', (req, res) => {
             project
         })
     } else {
-        res.sendStatus(404)
+        const error = new Error('Pump your brakes! Project Not Found!');
+          error.status = 404;
+        console.error(`An error occured on route ${req.originalUrl} with message: ${error.message} and status: ${error.status}`);
     }
 })
 
