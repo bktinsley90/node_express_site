@@ -13,7 +13,7 @@ router.get('/', (req, res, next) => {
 router.get('/about', (req, res) => {
     res.render("about")
 })
-router.get('/projects/:id', (req, res) => {
+router.get('/projects/:id', (req, res, next) => {
     const projectId = req.params.id;
     const project = projects.find(({
         id
@@ -26,6 +26,7 @@ router.get('/projects/:id', (req, res) => {
         const error = new Error('Pump your brakes! Project Not Found!');
           error.status = 404;
         console.error(`An error occured on route ${req.originalUrl} with message: ${error.message} and status: ${error.status}`);
+        next(error)
     }
 })
 
